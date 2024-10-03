@@ -16,6 +16,7 @@ if(mailVerify>0){
     console.log("Non puoi entrare");
     throw new Error("Accesso negato!"); //nel caso la mail non corrisponde a nessuna dell'array il codice da un errore e non prosegue 
 }
+//con questo sistema potremmo aggiungere quante email vogliamo nell'array senza manomettere il codice
 
 let numberUser = Math.floor(Math.random() * 6) + 1;;  //genera un numero casuale tra 0 e 1, lo moltiplica per 6 e lo arrotonda
 let numberPc = Math.floor(Math.random() * 6) + 1;     //infine aggiungiamo un +1 in modo che i valori vadano da 1 a 6
